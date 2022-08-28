@@ -2,6 +2,7 @@ const wordContainer = document.getElementById('wordContainer');
 const startButton = document.getElementById('startButton');
 const usedLettersElement = document.getElementById('usedLetters');
 
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 ctx.canvas.width = 0;
@@ -127,6 +128,7 @@ const startGame = () => {
     selectRandomWord();
     drawWord();
     document.addEventListener('keydown',letterEvent);
+    wordContainer.focus()
 };
 
 startButton.addEventListener('click',startGame);
