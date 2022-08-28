@@ -124,6 +124,9 @@ const startGame = () => {
     wordContainer.innerHTML = '';
     usedLettersElement.innerHTML = '';
     startButton.style.display = 'none';
+    let teclado = document.createElement('input');
+    teclado.setAttribute('id', 'teclado')
+    teclado.focus();
     drawHangman();
     selectRandomWord();
     drawWord();
