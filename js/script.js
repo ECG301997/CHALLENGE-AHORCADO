@@ -123,12 +123,12 @@ const startGame = () => {
     hits = 0;
     wordContainer.innerHTML = '';
     usedLettersElement.innerHTML = '';
+    startButton.focus()
     startButton.style.display = 'none';
     drawHangman();
     selectRandomWord();
     drawWord();
     document.addEventListener('keydown',letterEvent);
-    wordContainer.focus()
 };
 
 startButton.addEventListener('click',startGame);
