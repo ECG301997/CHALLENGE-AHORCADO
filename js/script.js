@@ -123,8 +123,8 @@ const startGame = () => {
     hits = 0;
     wordContainer.innerHTML = '';
     usedLettersElement.innerHTML = '';
-    startButton.focus()
     startButton.style.display = 'none';
+    wordContainer.focus();
     drawHangman();
     selectRandomWord();
     drawWord();
